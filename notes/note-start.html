@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking external css -->
+     <link rel="stylesheet" href="../css/note-styles.css">
+     <!-- interal css -->
+      <!-- <style>
+        div {
+            color: white;
+        }
+        p {
+            color: red;
+        }
+      </style> -->
     <title>Document</title>
 </head>
 <body>
-    <h1>heading 1</h1>
+    <!-- inline css -->
+    <h1 style="color: purple; background-color:brown">heading 1</h1>
     <h2>heading 2</h2>
     <h3>heading 3</h3>
     <h4>heading 4</h4>
@@ -55,5 +67,28 @@
 
     <!-- The alt attribute is used to describe an image. It will be used in place of the image if it cannot be loaded. It is also used with screen readers to describe what the image is to visually impaired users. -->
     <img src="../img/dog.jpg" alt="dog.jpg" height="310" width="310">
+
+    <!-- css selectors (case sensitive) -->
+    <!-- 
+        universal selector      =>  *
+        type selectors          =>  div p h1 ...
+        class selectors         =>  <div class="alert-text"/>       .alert-text
+        id selectors            =>  <div id="title"/>               #title
+        grouping selectors      =>  .read, .unread
+        chaining selectors      =>  .subsection.header  .subsection#title   (doesnt work for mult type selectors)
+        descendant combinator   =>  .parent .child
+    -->
+    <!-- css properties -->
+    <!-- 
+        color                   =>  #1100ff     rgb(100, 0, 127)        hsl(15, 82%, 56%)
+        color (transparent)     =>  #ff000080   rgb(100, 0, 0, 0.8)     hsl(120, 60%, 70%, 0.3)
+        font-family: "Times New Roman", serif;
+        font-size: 22px
+        font-weight             =>  bold OR 700
+        text-align
+        list-style              =>  none
+        text-transform          =>  uppercase
+        text-decoration         =>  none
+    -->
 </body>
 </html>
