@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- linking external css -->
-     <link rel="stylesheet" href="../css/note-styles.css">
+     <link rel="stylesheet" href="./note-styles.css">
      <!-- interal css -->
       <!-- <style>
         div {
@@ -68,6 +68,8 @@
     <!-- The alt attribute is used to describe an image. It will be used in place of the image if it cannot be loaded. It is also used with screen readers to describe what the image is to visually impaired users. -->
     <img src="../img/dog.jpg" alt="dog.jpg" height="310" width="310">
 
+</body>
+
     <!-- css selectors (case sensitive) -->
     <!-- 
         universal selector      =>  *
@@ -90,5 +92,25 @@
         text-transform          =>  uppercase
         text-decoration         =>  none
     -->
-</body>
+    <!-- Specificity -->
+    <!-- 
+        1. ID (most specific)
+        2. class
+        3. type
+
+        Only taken into account when an element has multiple, conflicting declarations targetting it, sort of like a tie breaker.
+        When there is no declaration with a selector of higher specificity, a rule with a greater number of selectors of the same type will take precedence over another rule with fewer selectors of the same type.
+
+        When comparing selectors, you may come across special symbols for the universal selector (*) as well as combinators (+, ~, >, and an empty space). These symbols do not add any specificity in and of themselves.
+
+        child combinator (>)
+    -->
+    <!-- Inheritance -->
+    <!-- 
+        refers to certain CSS properties that, when applied to an element, are inherited by that element’s descendants, even if we don’t explicitly write a rule for those descendants. Typography-based properties (color, font-size, font-family, etc.) are usually inherited, while most other properties aren’t. 
+    -->
+    <!-- Rule order -->
+    <!-- 
+        Whichever rule was the last defined is the winner. 
+    -->
 </html>
