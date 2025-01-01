@@ -1,3 +1,66 @@
+/* 
+*   css selectors (case sensitive)
+*
+*   universal selector      =>  *
+*   type selectors          =>  div p h1 ...
+*   class selectors         =>  <div class="alert-text"/>       .alert-text
+*   id selectors            =>  <div id="title"/>               #title
+*   grouping selectors      =>  .read, .unread
+*   chaining selectors      =>  .subsection.header  .subsection#title   (doesnt work for mult type selectors)
+*   descendant combinator   =>  .parent .child
+*/
+
+/*   
+*   css properties
+*
+*   color                   =>  #1100ff     rgb(100, 0, 127)        hsl(15, 82%, 56%)
+*   color (transparent)     =>  #ff000080   rgb(100, 0, 0, 0.8)     hsl(120, 60%, 70%, 0.3)
+*   font-family: "Times New Roman", serif;
+*   font-size: 22px
+*   font-weight             =>  bold OR 700
+*   text-align
+*   list-style              =>  none
+*   text-transform          =>  uppercase
+*   text-decoration         =>  none
+*/
+
+/* 
+*   Specificity
+* 
+*   1. ID (most specific)
+*   2. class
+*   3. type
+*
+*   Only taken into account when an element has multiple, conflicting declarations targetting it, sort of like a tie breaker.
+*   When there is no declaration with a selector of higher specificity, a rule with a greater number of selectors of the same type will take precedence over another rule with fewer selectors of the same type.
+*
+*   When comparing selectors, you may come across special symbols for the universal selector (*) as well as combinators (+, ~, >, and an empty space). These symbols do not add any specificity in and of themselves.
+*
+*   child combinator (>)
+*/
+
+/* 
+*   Inheritance
+*
+*   refers to certain CSS properties that, when applied to an element, are inherited by that element’s descendants, even if we don’t explicitly write a rule for those descendants. 
+*   Typography-based properties (color, font-size, font-family, etc.) are usually inherited, while most other properties aren’t. 
+*/
+
+/* 
+*   Rule order
+*
+*   Whichever rule was the last defined is the winner. 
+*/
+
+/*
+*   Box Model
+*
+*   outline     =>  outline the elements
+*   padding     =>  increases the space between the border of a box and the content of the box
+*   border      =>  add space (even if it’s only a pixel or two) between the margin and the padding
+*   margin      =>  increases the space between the borders of a box and the borders of adjacent boxes
+*/
+
 div {
     color: white;
     background-color: black;
