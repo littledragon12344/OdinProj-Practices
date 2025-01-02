@@ -3,8 +3,8 @@
     line-height: 1.5;
 }
 
-.section {
-    text-align: center;
+p {
+    margin-bottom: 20px;
 }
 
 .list.nodecor {
@@ -17,16 +17,26 @@
     font-size: 20px;
 }
 
-.section img {
-    height: 500px;
+.recipe-card {
+    width: 800px;
+    outline: 2px solid red;
+    background-color: rgb(255, 245, 226);
+    text-align: center;
+    margin: 20px auto;
+    padding: 50px;
+    box-shadow: 1px 1px 4px black;
+}
+
+.recipe-card img {
     width: auto;
+    height: 500px;
 }
 
-.section ul {
+.recipe-content {
+    text-align: left;
+    padding: 20px;
+}
+
+.recipe-content ul {
     list-style: square;
-    text-align: left;
-}
-
-.section ol {
-    text-align: left;
 }
