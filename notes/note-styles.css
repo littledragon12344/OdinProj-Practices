@@ -38,7 +38,23 @@
 //  the universal selector (*) as well as combinators (+, ~, >, and an empty space). 
 //  These symbols do not add any specificity in and of themselves.
 //
-//  child combinator (>)
+//  space       | descendant selector 
+//              | allows styling all the nested child elements, regardless of how deep they are in the hierarchy.
+//
+//  >           | child selector
+//              | selects DIRECT child elements of a specified parent element
+//
+//  +           | adjacent sibling combinator
+//              | combines two sequences of simple selectors having the same parent, 
+//              | 2nd one must come IMMEDIATELY after the first
+//              | e.g. div + p => select a p only if p is preceded by div
+//
+//  ~           | general sibling combinator
+//              | similar to +. 
+//              | the diff is that the second selector does NOT have to immediately follow the first one 
+//              | means it will select all elements that is preceded by the former selector.
+//              | e.g. div ~ p => select all p after a p is preceded by div
+//  
 */
 /* ========== INHERITANCE ========== //
 //
@@ -65,7 +81,29 @@
 //
 //  width and height of a element = sum(border, padding, content)
 */
-
+/* ========== FLEX ========== //
+//
+//  flex container      | any element that has display: flex
+//  flex item           | any element that live inside flex container
+//                      | flex item can be a flex container
+//
+//  flex declaration    | shorthand for flex-grow, flex-shrink, flex-basis
+//  flex: 1             | flex-grow: 1, flex-shrink: 1, flex-basis: 0 (flex: 1 1 0)
+//
+//  flex-grow           | expect single number as the item's growth factor
+//                      | flex: 2 to just one of the divs, that div grow to 2x the size of the others
+//  flex-shrink         | similar to grow but shrink item instead
+//                      | only applied if size of all items is larger than the parent container
+//  flex-shrink: 0      | prevent item from shrinking
+//
+//                      | flex items do not necessarily respect your given values for width
+//  flex-basis          | sets the initial size of a flex item
+//                      | any growing/shrinking starts from that baseline size
+//                      | basis set to 0, those items ignore item’s width, everything shrink evenly
+//                      | using auto tells the item to check for a width declaration
+//                      | default: auto unless specified, e.g. flex: 1
+//                      | flex: 1 1 auto == flex: auto
+*/
 div {
     color: white;
     background-color: black;
